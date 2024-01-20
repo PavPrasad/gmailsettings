@@ -30,3 +30,20 @@ Assignment: Reproduce UI of Gmail Settings page
 	2. Video recording of the app
 	3. Source code  
 2. The assignment to be completed within mentioned timeline from the date of assignment
+
+# how much is done :
+- [] in the main part :
+	- [x] the appbar is done
+	- [x] the subheadings are done
+		- [ ] ability to choose headings
+		- [ ] changing colors of the headings
+	- [x] Colors
+	- [x] Wrap list
+	- [x] List of all words
+- [ ] The lists of options
+	- [ ] Language selection
+	- [ ] Phone Number selection
+	- [ ] Stars
+		- [ ] Basic implementation
+		- [ ] drag and drop feature
+	- [ ] Signature section
