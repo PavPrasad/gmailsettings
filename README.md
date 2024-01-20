@@ -42,6 +42,7 @@ Assignment: Reproduce UI of Gmail Settings page
 	- [x] List of all words
 - [ ] The lists of options
 	- [ ] Language selection
+		- [ ] structure
 	- [ ] Phone Number selection
 	- [ ] Stars
 		- [ ] Basic implementation
