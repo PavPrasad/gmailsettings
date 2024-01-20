@@ -6,10 +6,6 @@ class LanguageChoice extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
-        color: const Color.fromARGB(255, 244, 244, 244),
-        borderRadius: BorderRadius.circular(5),
-      ),
       child: Table(
         columnWidths: const {
           // Adjust column widths as needed
@@ -21,7 +17,7 @@ class LanguageChoice extends StatelessWidget {
             TableCell(
               child: ListTile(
                 title: const Text(
-                  'Default country code:',
+                  'Default Language:',
                   style: TextStyle(
                     color: Colors.black,
                     fontWeight: FontWeight.w700,
@@ -95,6 +91,37 @@ class CountryCode extends StatelessWidget {
           ),
         ),
       ],
+    );
+  }
+}
+
+
+class Stars extends StatefulWidget {
+  const Stars({super.key});
+
+  @override
+  State<Stars> createState() => _StarsState();
+}
+
+class _StarsState extends State<Stars> {
+  @override
+  Widget build(BuildContext context) {
+    return  Container(
+      child:Column(children: [
+        Container(
+          child:Text("Drag the stars between the lists.  The stars will rotate in the order shown below when you click successively. To learn the name of a star for search, hover your mouse over the image.")
+        ),
+        Container(
+          child:const Row(
+            children: [
+              Text("Presets: "),
+              Text("1 star "),
+              Text("4 stars "),
+              Text("all star "),
+            ],
+          ),
+          ),
+      ],)
     );
   }
 }

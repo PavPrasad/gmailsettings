@@ -21,7 +21,92 @@ class MyApp extends StatelessWidget {
         body: ListView(
           children: [
             SubHeadings(),
-            ],
+            Container(
+                decoration: BoxDecoration(
+                  color: const Color.fromARGB(255, 244, 244, 244),
+                  borderRadius: BorderRadius.circular(5),
+                ),
+                child: Column(
+                  children: [
+                    Container(
+                        child: Row(
+                      children: [
+                        Expanded(
+                          flex: 2,
+                          child: Container(
+                            child: const Text(
+                              "Language:",
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.w700,
+                                fontSize: 20,
+                              ),
+                            ),
+                          ),
+                        ),
+                        Expanded(flex: 5, child: LanguageChoice()),
+                      ],
+                    )),
+                  ],
+                )),
+            Container(
+                child: Column(
+              children: [
+                Container(
+                    decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 244, 244, 244),
+                      borderRadius: BorderRadius.circular(5),
+                    ),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          flex: 2,
+                          child: Container(
+                            child: const Text(
+                              "Phone Number:",
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.w700,
+                                fontSize: 20,
+                              ),
+                            ),
+                          ),
+                        ),
+                        Expanded(flex: 5, child: CountryCode()),
+                      ],
+                    )),
+              ],
+            )),
+            Container(
+              child: Column(
+                children: [
+                Container(
+                    decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 244, 244, 244),
+                      borderRadius: BorderRadius.circular(5),
+                    ),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          flex: 2,
+                          child: Container(
+                            child: const Text(
+                              "Stars:",
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.w700,
+                                fontSize: 20,
+                              ),
+                            ),
+                          ),
+                        ),
+                        Expanded(flex: 5, child: Stars()),
+                      ],
+                    )),
+              ],
+              ),
+            )
+          ],
         ),
       ),
     );
